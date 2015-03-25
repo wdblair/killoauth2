@@ -29,7 +29,13 @@ oauthattacks.com (a fake domain that we gave to Facebook) to the
 localhost. Add the following to /etc/hosts
 
     127.0.0.1 oauthattacks.com
- 
+
+You will need to install the following software to run this code:
+
+    - python 2.7.*
+    - flask (python module)
+    - flask_oauth (python module)
+
 Then, run csrf.py and try to log in using Facebook.
 
     python csrf.py
