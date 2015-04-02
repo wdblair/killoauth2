@@ -24,7 +24,6 @@ facebook = oauth.remote_app('facebook',
     request_token_params={'scope': 'email'}
 )
 
-
 @app.route('/')
 def index():
     return redirect(url_for('login'))
