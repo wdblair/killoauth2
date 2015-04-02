@@ -1,6 +1,22 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<style>
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+</style>
 <script src="oauth.js"></script>
 </head>
 <body>
@@ -9,7 +25,9 @@
 Promotions</h1>
 <p>Congratulations! You have been selected to try out new beta features on our app. Sign up below to activate these new features!</p>
 <p><input type="checkbox"> I agree to the terms and conditions outlined in Spotify's end user agreement.</p> 
-<button class="btn" onclick="KO.attack()">Upgrade Account</button>
+<button class="btn btn-lg" onclick="KO.attack()">
+    <span id ="loading-text"></span><span id="button-text">Upgrade Account
+</button>
 </div>
 </body>
 </html>
